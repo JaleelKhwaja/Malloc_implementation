@@ -36,7 +36,7 @@ The main features of the chain (sub-chain) are:
 1. Each chain is broken into segments.
 2. Each segment represents a part of memory and represents whether that segment is of type PROCESS i.e. is mapped to the user process or is of type HOLE i.e. not allocated/mapped to the user program.
 3. The segments of type HOLE can be reallocated to any new requests by the user process. In this scenario, if some space remains after allocation then the remaining part becomes a new segment of type HOLE in that sub-chain. Graphaphically it looks something like below:
-![Alt Text]()
+![Alt Text](https://github.com/JaleelKhwaja/Malloc_implementation/blob/main/Images/os2.png)
 
 In the above picture, the Node1 of sub-chain-4 is reused by the user process but only 600 bytes out of 1000 bytes are used. Hence a HOLE of 400 bytes is created and the node of 600 bytes is marked as PROCESS and the MeMS virtual address corresponding to 600 bytes node is returned to the user process for further use.
 
@@ -61,11 +61,11 @@ Any time the user process wants to write/store anything to the heap, it has to m
 
 For example in the below figure
 
-MeMS virtual address 0 corresponds to MeMS physical address 1000
-MeMS virtual address 500 corresponds to MeMS physical address 1500
-MeMS virtual address 1024 corresponds to MeMS physical address 5024
+1. MeMS virtual address 0 corresponds to MeMS physical address 1000
+2. MeMS virtual address 500 corresponds to MeMS physical address 1500
+3. MeMS virtual address 1024 corresponds to MeMS physical address 5024
 
-
+[!Alt Text]()
 
 
 We can get the MeMS physical address (i.e. the actual address returned by mmap) corresponding to a MeMS virtual address by using the function mems_get function (see below for more details).
