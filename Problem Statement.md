@@ -25,7 +25,7 @@ Whenever the user program requests for memory from MeMS, MeMS first tries to fin
 
 
 The structure of free list looks like below:
-![Alt Text]()
+![Alt Text](https://github.com/JaleelKhwaja/Malloc_implementation/blob/main/Images/os1.png)
 
 
 
