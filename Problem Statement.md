@@ -65,7 +65,7 @@ For example in the below figure
 2. MeMS virtual address 500 corresponds to MeMS physical address 1500
 3. MeMS virtual address 1024 corresponds to MeMS physical address 5024
 
-[!Alt Text]()
+![Alt Text](https://github.com/JaleelKhwaja/Malloc_implementation/blob/main/Images/os3.png)
 
 
 We can get the MeMS physical address (i.e. the actual address returned by mmap) corresponding to a MeMS virtual address by using the function mems_get function (see below for more details).
