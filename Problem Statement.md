@@ -25,6 +25,7 @@ Whenever the user program requests for memory from MeMS, MeMS first tries to fin
 
 
 The structure of free list looks like below:
+![Alt Text]()
 
 
 
