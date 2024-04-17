@@ -108,18 +108,3 @@ void *mems_get(void*v_ptr): Returns the MeMS physical address mapped to ptr ( pt
 Parameter: MeMS Virtual address (that is created by MeMS)
 
 Returns: MeMS physical address mapped to the passed ptr (MeMS virtual address).
-
-
-
-
-### You will be graded upon:
-
-Documentation
-Viva/Demo
-Error handling
-Covering all the edge cases (like joining 2 adjacent hole nodes to make a new hole node)
-Correct mems_virtual_address corresponding to mems_physical_address.
-We will run various test cases (variants of the example file which we have shared) and each of them will have individual weightage.
-Successful compilation and correct output format.
-Use the data structures which have been described in the documentation.
-Any other implementation specific detail necessary for the assignment.
